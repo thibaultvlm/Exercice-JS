@@ -3,12 +3,11 @@ export class Livre {
     #auteur;
 
     constructor(titre, auteur) {
-        this.#auteur = auteur;
         this.#titre = titre;
+        this.#auteur = auteur;
     }
 
-    desciption() {
-        return `Titre : ${titre}, Auteur : ${auteur}`
+    description() {
+        return `Titre : ${this.#titre}, Auteur : ${this.#auteur}`;
     }
-    
 }
